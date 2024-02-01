@@ -1,6 +1,6 @@
 # file input 
 
-file_object = open('input1a.txt', 'r')
+file_object = open('./Task01/input1a.txt', 'r')
 input_text: str = file_object.readline() #read one line at a time
 input_text: str = file_object.readlines() #read all line at a time
 

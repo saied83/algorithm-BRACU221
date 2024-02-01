@@ -9,8 +9,6 @@ def findOddEven(number):
     else:
         print(f'{number} is an Odd number.')
 
-
-
 if __name__ == "__main__":
     testCase = int(input())
     for c in range(testCase):
