@@ -1,2 +1,0 @@
-this is output
-new line
