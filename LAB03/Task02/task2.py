@@ -16,9 +16,14 @@ def divideAndFindMax(arr):
     right = divideAndFindMax(arr[mid:])
     return findMax(left, right)
 
-
-if __name__ == "__main__":
+def main():
     testCase = int(input())
     arr = list(map(int, input().split(" ")))
     result = divideAndFindMax(arr)
     print(result)
+
+if __name__ == "__main__":
+    main()
+    
+# Time Complexity of this code
+# T(n) = 2*T(n/2) + O(1)
