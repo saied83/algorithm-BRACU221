@@ -2,7 +2,7 @@ import sys
 sys.stdin = open('input1_A.txt', 'r')
 sys.stdout = open('output1_A.txt', 'w')
 
-
+#only for weighted graph with one edge between two Nodes
 def graphRepAdjMatrix():
     (n, m) = tuple(map(int, input().split(" ")))
     graph = [[0]*(n+1) for i in range(n+1)]
