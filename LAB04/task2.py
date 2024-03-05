@@ -6,6 +6,7 @@ def graphRepAdjList():
     for i in range(m):
         (u, v) = tuple(map(int, input().split(" ")))
         graph[u].append(v)
+        graph[v].append(u)
     return graph
 
 def BSF(graph, source):
