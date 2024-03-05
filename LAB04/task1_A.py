@@ -1,8 +1,5 @@
 import sys
-sys.stdin = open('input1_A.txt', 'r')
-sys.stdout = open('output1_A.txt', 'w')
 
-#only for weighted graph with one edge between two Nodes
 def graphRepAdjMatrix():
     (n, m) = tuple(map(int, input().split(" ")))
     graph = [[0]*(n+1) for i in range(n+1)]
@@ -17,7 +14,10 @@ def printGraphAdjMatrix(g):
         for j in range(r):
             print(g[i][j], end=" ")
         print()
+
 def main():
+    sys.stdin = open('input1_A.txt', 'r')
+    sys.stdout = open('output1_A.txt', 'w') 
     graph = graphRepAdjMatrix()
     printGraphAdjMatrix(graph)
 

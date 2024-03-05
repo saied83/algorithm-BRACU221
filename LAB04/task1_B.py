@@ -1,7 +1,4 @@
 import sys
-sys.stdin = open('input1_B.txt', 'r')
-sys.stdout = open('output1_B.txt', 'w')
-
 
 def graphRepAdjList():
     (n, m) = tuple(map(int, input().split(" ")))
@@ -9,6 +6,7 @@ def graphRepAdjList():
     for i in range(m):
         (u, v, w) = tuple(map(int, input().split(" ")))
         graph[u].append((v,w))
+
     return graph
 
 def printGraphAdjList(g):
@@ -19,6 +17,8 @@ def printGraphAdjList(g):
         print()
         
 def main():
+    sys.stdin = open('input1_B.txt', 'r')
+    sys.stdout = open('output1_B.txt', 'w')
     g = graphRepAdjList()
     printGraphAdjList(g)
 

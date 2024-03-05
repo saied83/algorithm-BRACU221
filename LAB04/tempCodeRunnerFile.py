@@ -1,3 +1,3 @@
-    for i in range(m):
-        (u, v, w) = tuple(map(int, input().split(" ")))
-        graph[u][v] = w
+import sys
+sys.stdin = open('input2.txt', 'r')
+sys.stdout = open('output2.txt', 'w')
