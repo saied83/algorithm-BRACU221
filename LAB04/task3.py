@@ -12,13 +12,15 @@ def graphRepAdjList():
 
 def DFS(graph, source):
     visited = [-1]*len(graph)
-    sequence = str(source) + " "
+    # sequence = str(source) + " "
+    sequence = ""
     visited[source] = 0
 
-    for i in range(len(graph[source])):
-        u = graph[source][i]
-        if visited[u] == -1:
-            (visited, sequence) = DFSvisit(graph, u, visited, sequence)
+    # for i in range(len(graph[source])):
+    #     u = graph[source][i]
+    #     if visited[u] == -1:
+    #         (visited, sequence) = DFSvisit(graph, u, visited, sequence)
+    (visited, sequence) = DFSvisit(graph, source, visited, sequence)
     print(sequence)
 
 def DFSvisit(graph, u, visited, sequence):
