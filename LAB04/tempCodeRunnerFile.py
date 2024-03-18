@@ -1,3 +1,2 @@
-import sys
-sys.stdin = open('input2.txt', 'r')
-sys.stdout = open('output2.txt', 'w')
+    # for i in range(row):
+    #     visited.append([False]*col)

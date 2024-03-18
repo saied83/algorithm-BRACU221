@@ -10,9 +10,6 @@ def graphRepAdjList():
     return graph
 
 def BSF(graph, source):
-    # n = len(graph)
-    # parent = [None]*n
-    # level = [-1]*n
     visited = [-1]*len(graph)
     Q = []
     sequence = str(source)
